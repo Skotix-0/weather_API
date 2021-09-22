@@ -8,12 +8,36 @@
     <title>Weather API</title>
 </head>
 <body>
-    <script src="jQuery.js"></script>
+    <script src="js/jQuery.js"></script>
 
-    <input type="text" id="city_input">
+    <div class="main">
+        <div class="content_weather">
 
-    <div class="data"></div>
+            <div class="content_weather_block-1">
+                <input type="text" id="city_input">
+            </div>
 
+            <div class="content_weather_block-2">
+                <span id="temp"></span>
+                <div id="icon_weather"></div>
+
+                <div class="content_weather_block-2_chiled">
+                    <span id="weather_type"></span>
+                    <div class="span_block">
+                        Ощущается как <span id="feels_like_temp"></span>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="content_weather_block-3">
+                <img src="images/winter.svg" alt=""> <span id="wind_speed"></span>
+                <img src="images/vlaga.svg" alt=""> <span id="humidity"></span>
+                <img src="images/davl.svg" alt=""> <span id="pressure"></span>
+            </div>
+            
+        </div>
+    </div>
+    
     <script src="./js/main.js"></script>
 </body>
 </html>
